@@ -1,1 +1,41 @@
+8/28
+1번 문제-슬라이싱과 isalnum(),lower() 등의 메서드를 사용하여
+회문 판별하기
+
+
+2번 문제-3x3 큐브 리스트 값을 90도 회전한 값 구하기
+빈 list 속에 값을 다 넣고 이중 반복문을 돌려 해결
+90도 돌린 값 구하는 공식은 암기 필요
+for i in range(n):
+        for j in range(n):
+            rotated[j][n - 1 - i] = matrix[i][j]
+    return rotated
+
+3번 문제-학생들의 이름과 성적 값을 담은 딕셔너리를
+꺼내서 평균 값 구하기
+평균값보다 성적이 높은 학생 구하기
+average = sum(list_scores) / len(list_scores)
+로 평균값 구하기
+
+평균 이상인 학생 구하기 실패
+
+8/29
+3번 문제-친구 도움으로 평균 학생 구하기 성공
+above_average_students = [student["name"] for student in students if student["score"] >= average]
+
+4번 문제-정수 배열중 2개의 수를 선택하여 
+그 합이 목표값과 같아지는 모든 쌍 찾기
+정수 배열을 담을 리스트 선언 pairs = []
+    n = len(nums)
+  이중 반복문으로 모든 쌍 확인
+for i in range(n):
+        for j in range(i+1, n):
+            if nums[i] + nums[j] == target:
+                pairs.append((i, j))
+  return pairs
+
+5번 문제-팩토리얼과 피보나치 값 구하기
+함수 암기 필요
+
+
 
